@@ -23,7 +23,7 @@ def packet_handler(packet):
 
     #prints stats every (REPEAT_INTERVAL) SECONDS
     if current_time - last_report_time >= REPEAT_INTERVAL:
-        print("\n--- Traffic stats (last {} seconds) ---", format(REPEAT_INTERVAL))
+        print("\n--- Traffic stats (last {} seconds) ---",format(REPEAT_INTERVAL))
 
         for ip, count in packet_counts.items():
             print(f"{ip}: {count} packets")
