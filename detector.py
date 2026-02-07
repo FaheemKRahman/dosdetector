@@ -19,7 +19,7 @@ window_start = time.time()
 
 
 def packet_handler(packet):
-    global last_report_time
+    global window_start
     
     if packet.haslayer(IP):
         src_ip = packet[IP].src
