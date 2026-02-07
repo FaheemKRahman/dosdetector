@@ -8,7 +8,7 @@ packet_counts = defaultdict(int)
 #For detection
 
 WINDOW = 1 # second
-THRESHOLD = 100 # packets per window
+THRESHOLD = 50# packets per window
 
 window_start = time.time()
 
